@@ -1,0 +1,21 @@
+2026-09-10 01:00:01 INFO Starting ETL job: daily_sales_load
+2026-09-10 01:00:05 INFO Connecting to source database
+2026-09-10 01:00:10 INFO Extracted 15230 rows from sales_raw
+2026-09-10 01:00:15 DEBUG Applying transformation rules
+2026-09-10 01:00:20 WARNING Null values found in column: discount_pct
+2026-09-10 01:00:25 INFO Transformation completed
+2026-09-10 01:00:30 ERROR Failed to connect to target warehouse: connection timeout
+2026-09-10 01:00:35 ERROR Retry attempt 1 failed
+2026-09-10 01:00:40 INFO Retry attempt 2 successful
+2026-09-10 01:00:45 INFO Loaded 15230 rows into sales_fact
+2026-09-10 01:00:50 INFO Job daily_sales_load completed successfully
+2026-09-10 02:00:01 INFO Starting ETL job: inventory_sync
+2026-09-10 02:00:05 INFO Connecting to source database
+2026-09-10 02:00:10 ERROR Source table inventory_raw not found
+2026-09-10 02:00:15 ERROR Job inventory_sync failed
+2026-09-10 03:00:01 INFO Starting ETL job: customer_updates
+2026-09-10 03:00:05 INFO Extracted 890 rows from customers_raw
+2026-09-10 03:00:10 DEBUG Validating email formats
+2026-09-10 03:00:15 WARNING 3 records had invalid email format
+2026-09-10 03:00:20 INFO Loaded 887 rows into customers_dim
+2026-09-10 03:00:25 INFO Job customer_updates completed successfully

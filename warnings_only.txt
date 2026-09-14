@@ -1,0 +1,6 @@
+2026-09-10 01:00:20 WARNING Null values found in column: discount_pct
+2026-09-10 03:00:15 WARNING 3 records had invalid email format
+2026-09-10 01:00:30 ERROR Failed to connect to target warehouse: connection timeout
+2026-09-10 01:00:35 ERROR Retry attempt 1 failed
+2026-09-10 02:00:10 ERROR Source table inventory_raw not found
+2026-09-10 02:00:15 ERROR Job inventory_sync failed
